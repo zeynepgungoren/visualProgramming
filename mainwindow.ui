@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Basit Metin Düzenleyici</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDosya">
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="actionYeni"/>
+    <addaction name="actionAc"/>
+    <addaction name="actionKaydet"/>
+    <addaction name="actionFarkliKaydet"/>
+    <addaction name="separator"/>
+    <addaction name="actionCikis"/>
+   </widget>
+   <widget class="QMenu" name="menuDuzenle">
+    <property name="title">
+     <string>Düzenle</string>
+    </property>
+    <addaction name="actionGeriAl"/>
+    <addaction name="actionIleriAl"/>
+    <addaction name="separator"/>
+    <addaction name="actionKes"/>
+    <addaction name="actionKopyala"/>
+    <addaction name="actionYapistir"/>
+   </widget>
+   <addaction name="menuDosya"/>
+   <addaction name="menuDuzenle"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionBold"/>
+   <addaction name="actionItalic"/>
+   <addaction name="actionUnderline"/>
+   <addaction name="separator"/>
+   <widget class="QFontComboBox" name="fontComboBox"/>
+   <widget class="QSpinBox" name="fontSizeSpinBox">
+    <property name="minimum">
+     <number>8</number>
+    </property>
+    <property name="maximum">
+     <number>72</number>
+    </property>
+    <property name="value">
+     <number>12</number>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionYeni">
+   <property name="text">
+    <string>Yeni</string>
+   </property>
+  </action>
+  <action name="actionAc">
+   <property name="text">
+    <string>Aç</string>
+   </property>
+  </action>
+  <action name="actionKaydet">
+   <property name="text">
+    <string>Kaydet</string>
+   </property>
+  </action>
+  <action name="actionFarkliKaydet">
+   <property name="text">
+    <string>Farklı Kaydet...</string>
+   </property>
+  </action>
+  <action name="actionCikis">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="actionGeriAl">
+   <property name="text">
+    <string>Geri Al</string>
+   </property>
+  </action>
+  <action name="actionIleriAl">
+   <property name="text">
+    <string>İleri Al</string>
+   </property>
+  </action>
+  <action name="actionKes">
+   <property name="text">
+    <string>Kes</string>
+   </property>
+  </action>
+  <action name="actionKopyala">
+   <property name="text">
+    <string>Kopyala</string>
+   </property>
+  </action>
+  <action name="actionYapistir">
+   <property name="text">
+    <string>Yapıştır</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="text">
+    <string>Kalın</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="text">
+    <string>İtalik</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="text">
+    <string>Altı Çizili</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
